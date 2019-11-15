@@ -155,10 +155,7 @@ text-decoration: underline;
 background-color: lightblue;
 border: none;
 display:inline;
-<<<<<<< HEAD
 cursor: pointer;
-=======
->>>>>>> e077a41... Added javascript-file and started styling the projects
 }
 #moreText1, #moreText2, #moreText3{
   display:none;

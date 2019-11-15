@@ -7,7 +7,6 @@ const extraText2 = document.getElementById("moreText2")
 const extraText3 = document.getElementById("moreText3")
 
 const expandText = () => {
-<<<<<<< HEAD
   if (extraText1.style.display === "none") {
     extraText1.style.display = "inline"
     projectButton1.innerHTML = "<<"
@@ -23,8 +22,5 @@ const expandText = () => {
 // }
 
 // document.getElementById("readMore1").onclick = expandText()
-=======
-  extraText1.style.display === "block"
+extraText1.style.display === "block"
 }
-
->>>>>>> e077a41... Added javascript-file and started styling the projects
