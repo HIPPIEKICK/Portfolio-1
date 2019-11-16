@@ -108,6 +108,7 @@ h5{
   border: 3px solid #3c4763;
   border-radius: 5px;
   margin: 10px 0;
+  width:300px;
 }
 .skills{
   display:flex;
@@ -139,6 +140,7 @@ p{
   text-align: left;
   font-family: 'Roboto', sans-serif;
   margin: 20px 0 50px 0;
+  width: 300px;
 }
 .project-box a{
 color:black;
@@ -178,7 +180,7 @@ cursor: pointer;
   padding: 3px 10px;
   background-color: teal;
   display:inline;
-  margin-right: 5px;
+  margin: 5px;
   color: white;
   font-size: 14px;
 }
@@ -265,7 +267,7 @@ width: 100%;
     margin: 0;
   }
   .information {
-  padding: 55px 400px;
+  padding: 55px 140px;
 }
 .profile-picture{
   margin-right: 140px;
@@ -298,6 +300,12 @@ h4{
 }
 .other-projects .project-box{
 width: 100%;
+}
+.red-icons{
+  justify-content: center;
+}
+.red-icons .circles{
+margin: 30px;
 }
 
 }
