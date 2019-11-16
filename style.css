@@ -126,6 +126,7 @@ ul{
 }
 li{
   margin: 0;
+  color: black;
 }
 p{
   color: black;
@@ -250,7 +251,52 @@ h4{
 .project-image{
   width: 100%;
 }
+.other-projects .project-box{
+width: 100%;
+}
 }
 /***DESKTOP***/
 @media (min-width: 1025px){
+  .hero-text{
+    padding: 20px 140px;
+  }
+  h1, h2{
+    margin: 0;
+  }
+  .information {
+  padding: 55px 400px;
+}
+.profile-picture{
+  margin-right: 140px;
+}
+.icons{
+  margin-right: 140px;
+}
+.hero-image{
+  height: 450px;
+}
+h3{
+  font-size: 25px;
+}
+h4{
+  font-size: 20px;
+}
+
+#featuredProjects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project-box{
+  width: 45%;
+  flex-direction: column;
+}
+.project-image{
+  width: 100%;
+}
+.other-projects .project-box{
+width: 100%;
+}
+
 }
