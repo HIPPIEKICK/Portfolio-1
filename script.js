@@ -8,7 +8,7 @@ const extraText3 = document.getElementById("moreText3")
 
 const expandText = () => {
   if (extraText1.style.display === "none") {
-    extraText1.style.display = "inline"
+    extraText1.style.display = "flex"
     projectButton1.innerHTML = "<<"
 
   } else {
@@ -22,5 +22,4 @@ const expandText = () => {
 // }
 
 // document.getElementById("readMore1").onclick = expandText()
-extraText1.style.display === "block"
-}
+// extraText1.style.display === "block"
