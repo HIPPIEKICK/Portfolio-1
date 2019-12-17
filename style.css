@@ -12,7 +12,7 @@ height: 100%;
 
 }
 .hero-image{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("hero-image.jpg"); /*För att tona ner bilden lite*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/Images/hay.jpg"); /*För att tona ner bilden lite*/
   background-position: center; /*Centers the image vertically*/
   background-repeat: no-repeat; /*The image should only be shown once*/
   background-size: cover; /*Makes the image fit*/
@@ -20,7 +20,7 @@ height: 100%;
   /* width:100%; */
   display: flex;
   flex-direction: column;
-  border: 3px solid #3c4763;
+  /* border: 3px solid #3c4763; */
   margin-bottom: 3px;
 }
 .hero-text{
@@ -93,7 +93,7 @@ h5{
 }
 
 .information{
-  background-color: lightblue;
+  background-color: wheat;
   padding: 55px 35px;
   display:flex;
   flex-direction: column;
@@ -165,7 +165,7 @@ color:black;
   color:#992e29;
   font-weight: bold;
 text-decoration: underline;
-background-color: lightblue;
+background-color: wheat;
 border: none;
 display:inline;
 cursor: pointer;
