@@ -147,6 +147,18 @@ h5{
   color:white;
   font-weight: bold;
 }
+.image-box:hover .project-image{
+opacity:1;
+}
+.project-name:hover{
+display:none;
+}
+.over-image a{
+  display:none;
+}
+.projectname a:hover a{
+  display:flex;
+}
 .project-image{
   /* border: 3px solid black; */
   border-radius: 5px;
