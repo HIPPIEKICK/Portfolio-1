@@ -16,6 +16,17 @@ const expandText = () => {
     projectButton1.innerHTML = ">>"
   }
 }
+const expandText = () => {
+  if (extraText2.style.display === "none") {
+    extraText2.style.display = "flex"
+    projectButton1.innerHTML = "<<"
+
+  } else {
+    extraText2.style.display = "none"
+    projectButton2.innerHTML = ">>"
+  }
+}
+
 
 // const expandText = () => {
 //   this.yadayada.toggle("expanded")
