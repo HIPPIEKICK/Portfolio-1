@@ -148,16 +148,32 @@ h5{
   font-weight: bold;
 }
 .image-box:hover .project-image{
-opacity:1;
+/* opacity:1; */
 }
-.project-name:hover{
+.image-box:hover .project-name{
 display:none;
 }
 .over-image a{
   display:none;
 }
-.projectname a:hover a{
+.image-box:hover a{
   display:flex;
+  font-family: "Montserrat";
+  width: 70px;
+  margin: 2px 6px;
+  padding:4px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  background: #992e29;
+  border-radius: 5px;
+}
+.image-box:hover .over-image{
+  background-color: transparent;
+  /* width:80px; */
+}
+.over-image:hover p{
+  display:none
 }
 .project-image{
   /* border: 3px solid black; */
