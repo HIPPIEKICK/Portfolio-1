@@ -132,7 +132,7 @@ h5{
   /* width:100%; */
 }
 .over-image{
-  width: 200px;
+  /* width: 200px; */
   display:flex;
   justify-content: center;
   padding: 5px 10px;
@@ -267,7 +267,8 @@ cursor: pointer;
 }
 .articles-collection{
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
+  width:300px;
 }
 .articles-collection a{
   margin:20px;
@@ -291,7 +292,10 @@ cursor: pointer;
   width: 100%;
 }
 
+.red-icons a{
+  text-align: center;
 
+}
 .red-text{
   color: #fa382f;
   font-size: 11px;
@@ -350,12 +354,12 @@ h4{
 
 #featuredProjects{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .project-box{
-  width: 45%;
+  width: 100%;
   flex-direction: column;
 }
 .project-image{
@@ -363,6 +367,13 @@ h4{
 }
 .other-projects .project-box{
 width: 100%;
+}
+.over-image{
+  top:50%;
+  left:30%;
+}
+.articles-collection{
+  width: 100%;
 }
 }
 /***DESKTOP***/
@@ -414,6 +425,11 @@ width: 100%;
 }
 .red-icons .circles{
 margin: 30px;
+}
+.articles-collection{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 }
