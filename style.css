@@ -351,23 +351,28 @@ h3{
 h4{
   font-size: 20px;
 }
-
 #featuredProjects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* #featuredProjects{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
+} */
 .project-box{
-  width: 100%;
-  flex-direction: column;
+  width: 45%;
+  flex-direction: row;
 }
 .project-image{
   width: 100%;
 }
-.other-projects .project-box{
+/* .other-projects .project-box{
 width: 100%;
-}
+} */
 .over-image{
   top:50%;
   left:30%;
