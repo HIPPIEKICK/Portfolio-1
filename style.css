@@ -1,15 +1,8 @@
-/*HIMMEL: #3c4763
-JACKA: #00a3ff
-MOLN: #992e29
-*/
 body{
-font-family: 'Montserrat', sans-serif;
-color: white;
-margin: 0;
-height: 100%;
-}
-.top{
-
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  margin: 0;
+  height: 100%;
 }
 .hero-image{
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/Images/hay.jpg"); /*För att tona ner bilden lite*/
@@ -17,17 +10,15 @@ height: 100%;
   background-repeat: no-repeat; /*The image should only be shown once*/
   background-size: cover; /*Makes the image fit*/
   height: 500px;
-  /* width:100%; */
   display: flex;
   flex-direction: column;
-  /* border: 3px solid #3c4763; */
   margin-bottom: 3px;
 }
 .hero-text{
   padding: 20px;
 }
 .circles{
-  border: 3px solid white;
+  border: 2px solid white;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -58,7 +49,6 @@ h1{
 }
 .bold{
   font-weight: 700;
-  padding-left: 20px;
 }
 h2{
   font-size: 40px;
@@ -119,7 +109,6 @@ h5{
   flex-direction: column;
   align-items: center;
   text-align: start;
-
 }
 #information{
   text-indent:55px;
@@ -127,19 +116,37 @@ h5{
 .information:nth-child(even){
   background-color: white;
 }
+
+#featuredProjects{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width:100%;
+}
+
+.project-box{
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 30px;
+  width: 100%;
+}
+.project-box a{
+  color:black;
+}
+
 .image-box{
   position: relative;
-  /* width:100%; */
+  width:100%;
 }
 .over-image{
-  /* width: 200px; */
-  display:flex;
-  justify-content: center;
   padding: 5px 10px;
   position:absolute;
-  top:45%;
-  left: 18%;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color:#992e29;
+  text-align: center;
 }
 .over-image p{
   font-family: "Montserrat";
@@ -147,42 +154,39 @@ h5{
   color:white;
   font-weight: bold;
 }
-.image-box:hover .project-image{
-opacity:0.5;
-}
-.image-box:hover .project-name{
-display:none;
-}
-.over-image a{
+
+.image-box .project-name{
   display:none;
 }
-.image-box:hover a{
+
+.image-box a{
   display:flex;
   font-family: "Montserrat";
   width: 70px;
-  margin: 2px 6px;
-  padding:4px;
+  margin: 40px 0;
+  padding:15px;
   border: 2px solid white;
   color: white;
   text-decoration: none;
   background: #992e29;
   border-radius: 5px;
 }
-.image-box:hover .over-image{
+.image-box .over-image{
   background-color: transparent;
-  /* width:80px; */
 }
-.over-image:hover p{
-  display:none
-}
+
 .project-image{
-  /* border: 3px solid black; */
-  border-radius: 5px;
   margin: 10px 0;
-  width:300px;
-  opacity: 0.8;
-  position: relative;
-  /* z-index: -5; */
+  width:100%;
+  opacity: 0.7;
+}
+
+.other-projects .project-box{
+  width:100%;
+}
+.other-projects h4{
+  margin-top: 50px;
+  text-align: center;
 }
 .red-link{
   color:#992e29;
@@ -199,6 +203,7 @@ display:none;
 .skillset{
 margin: 10px;
   width: 40%;
+  text-align: center;
 }
 ul{
   list-style-type: none;
@@ -216,24 +221,13 @@ p{
   font-size: 17px;
   display: inline;
 }
-.project-box{
-  text-align: left;
-  font-family: 'Roboto', sans-serif;
-  margin: 20px 0 50px 0;
-  width: 300px;
-}
-.project-box a{
-color:black;
-}
 
 .information .circles{
-    border: 3px solid #fa382f;
-    width: 60px;
-    height: 60px;
+    border: 2px solid #fa382f;
+    width: 70px;
+    height: 70px;
 }
 .red-icons{
-  /* align-self: flex-end; */
-  /* margin: 100px 35px 0 0; */
   display: flex;
   flex-direction: row;
   margin-top: 35px;
@@ -241,26 +235,18 @@ color:black;
   justify-content: space-evenly;
   line-height: 80%;
 }
-#readMore1, #readMore2, #readMore3, #readMore4, #readMore5, #readMore6, #readMore7{
-  color:#992e29;
-  font-weight: bold;
-text-decoration: underline;
-background-color: wheat;
-border: none;
-display:inline;
-cursor: pointer;
-}
-#moreText1, #moreText2, #moreText3, #moreText4{
-  display:none;
+.red-icons .icon{
+    width: 25px;
+    height: 25px;
+    padding: 8px;
 }
 .pink-tags{
   margin: 8px 0 0 0;
 }
 .pink-tags p{
   padding: 3px 10px;
-  background-color: rosybrown;
+  background-color: rgb(184, 101, 62);
   display:inline;
-  /* margin: 5px; */
   color: white;
   font-size: 14px;
   line-height: 25px;
@@ -268,13 +254,15 @@ cursor: pointer;
 .articles-collection{
   display:flex;
   flex-direction: column;
-  width:300px;
+  width:100%;
 }
 .articles-collection a{
-  margin:20px;
   display:flex;
   flex-direction: column;
   width:100%;
+}
+.articles-collection a:nth-child(1){
+  margin-bottom: 30px;
 }
 .articles-collection h5{
   margin-bottom:10px;
@@ -294,11 +282,10 @@ cursor: pointer;
 
 .red-icons a{
   text-align: center;
-
 }
 .red-text{
   color: #fa382f;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -310,7 +297,6 @@ footer{
   padding: 55px 35px;
   align-items: center;
   text-align: center;
-  font-weight: bold;
 }
 footer h3{
   background: none;
@@ -321,19 +307,19 @@ footer p, a{
 }
 footer a{
   font-weight: normal;
-text-decoration: none;
+  text-decoration: none;
   cursor: pointer;
 }
 
 /***TABLET***/
 @media (min-width: 668px) and (max-width: 1149px){
-  .hero-text{
-    padding: 20px 140px;
-  }
-  h1, h2{
-    margin: 0;
-  }
-  .information {
+.hero-text{
+  padding: 20px 140px;
+}
+h1, h2{
+  margin: 0;
+}
+.information {
   padding: 55px 140px;
 }
 .profile-picture{
@@ -351,46 +337,70 @@ h3{
 h4{
   font-size: 20px;
 }
-#featuredProjects{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-/* #featuredProjects{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-} */
 .project-box{
-  width: 45%;
-  flex-direction: row;
+  width: 48%;
 }
+
 .project-image{
-  width: 100%;
+  opacity: 0.8;
 }
-/* .other-projects .project-box{
-width: 100%;
-} */
-.over-image{
-  top:50%;
-  left:30%;
+
+/*HOVER-EFFECTS PROJECTS*/
+
+.image-box .project-name{
+  display:flex;
+  background-color: #992e29;
+  padding: 4px 6px;
 }
+
+.image-box:hover .project-image{
+  opacity:0.5;
+}
+.image-box:hover .project-name{
+  display:none;
+}
+.over-image a{
+  display:none;
+} 
+
+
+.image-box:hover a{
+  display:flex;
+  font-family: "Montserrat";
+  width: 70px;
+  margin: 10px 0;
+  padding:4px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  background: #992e29;
+  border-radius: 5px;
+}
+
+.image-box:hover .over-image{
+  background-color: transparent;
+}
+
 .articles-collection{
+  display:flex;
+  flex-direction: row;
   width: 100%;
 }
+.articles-collection a:nth-child(1){
+  margin-right: 20px;
+  }
+
 }
+
 /***DESKTOP***/
-/*Changed from 1025px to 1150*/
 @media (min-width: 1150px){
-  .hero-text{
-    padding: 20px 300px;
-  }
-  h1, h2{
-    margin: 0;
-  }
-  .information {
+.hero-text{
+  padding: 20px 300px;
+}
+h1, h2{
+  margin: 0;
+}
+.information {
   padding: 55px 300px;
 }
 .profile-picture{
@@ -408,33 +418,62 @@ h3{
 h4{
   font-size: 20px;
 }
-
-#featuredProjects{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 .project-box{
-  width: 45%;
-  flex-direction: column;
+  width: 48%;
 }
 .project-image{
-  width: 100%;
+  opacity: 0.8;
 }
-.other-projects .project-box{
-width: 100%;
+
+/*HOVER-EFFECTS PROJECTS*/
+
+.image-box .project-name{
+  display:flex;
+  background-color: #992e29;
+  padding: 4px 6px;
 }
+
+.image-box:hover .project-image{
+  opacity:0.5;
+}
+.image-box:hover .project-name{
+  display:none;
+}
+.over-image a{
+  display:none;
+} 
+
+.image-box:hover a{
+  display:flex;
+  font-family: "Montserrat";
+  width: 70px;
+  margin: 10px 0;
+  padding:4px;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  background: #992e29;
+  border-radius: 5px;
+}
+.image-box:hover .over-image{
+  background-color: transparent;
+}
+
+/*Other*/
 .red-icons{
   justify-content: center;
 }
 .red-icons .circles{
-margin: 30px;
+  margin: 30px;
 }
 .articles-collection{
   display:flex;
   flex-direction: row;
   width: 100%;
+}
+
+.articles-collection a:nth-child(1){
+  margin-right: 20px;
 }
 
 }
